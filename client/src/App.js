@@ -7,17 +7,24 @@ import Nav from "./components/Nav";
 import Splash from "./pages/Splash";
 import Nominated from "./pages/Nominated";
 import History from "./pages/History";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Landing from "./pages/Landing";
+// import Logout from "./components/Logout";
 
 const App = () => (
   <Router>
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={Splash}/>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
         <Route exact path="/nominated" component={Nominated} />
         <Route exact path="/nominate" component={Students} />
         <Route exact path="/history" component={History} />
         <Route exact path="/students/:id" component={Detail} />
+      
         <Route component={NoMatch} />
       </Switch>
     </div>
