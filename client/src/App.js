@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 import Nominated from "./pages/Nominated";
 import History from "./pages/History";
 import Signup from "./pages/Signup";
-import Login from "./pages/Login";
+import Login from "./pages/Signup/Login";
 import Landing from "./pages/Landing";
 // import Logout from "./components/Logout";
 

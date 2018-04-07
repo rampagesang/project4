@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import API from "../../utils/API";
-import Auth from '../../utils/Auth';
+import API from "../../../utils/API";
+import Auth from '../../../utils/Auth';
 import Background from './bg.jpg';
-import { Input } from "../../components/Form";
+import { Input } from "../../../components/Form";
 import './Login.css';
 
 var styles = {
@@ -67,43 +67,46 @@ class Login extends Component {
                 <div className="col align-self-center box">
                   <form>
                     <div className="form-group">
-                    <Input
-                      value={this.state.email}
-                      onChange={this.handleInputChange}
-                      onFocus={this.handleFocus}
-                      name="email"
-                      placeholder="Email (required)"
-                      className="form-control"
-                      required=""
-                      autoFocus={true}
+                    <Input inputProps={{
+                      value:this.state.email,
+                      onChange:this.handleInputChange,
+                      onFocus:this.handleFocus,
+                      name:"email",
+                      placeholder:"Email (required)",
+                      className:"form-control",
+                      required:"",
+                      autoFocus:true}}
+                      label="Email"
                     />
                     </div>
                     <div className="form-group">
                     <Input
-                      value={this.state.password}
-                      onChange={this.handleInputChange}
-                      name="password"
-                      type="password"
-                      placeholder="Password (required)"
-                      className="form-control"
-                      required=""
+                      inputProps={{value:this.state.password,
+                      onChange:this.handleInputChange,
+                      name:"password",
+                      type:"password",
+                      placeholder:"Password (required)",
+                      className:"form-control",
+                      minlength:8,
+                      required:true}}
+                      label="Password"
                     />
                     </div>
                     <p className="lead">
                     <button
                       disabled={!(this.state.email && this.state.password && this.state.password.length >= 6)}
                       onClick={this.handleLogin}
-                      className="btn btn-lg btn-primary btn-block"
+                      className="btn btn-primary btn-block"
                     >
                       Login
                     </button>
                     </p>
+                    <p className="backButton"><a href="/signup" className="btn btn-success">Back</a></p>
                   </form>
                 </div>
               </div>
               <div className="col-md-3" />
               </div>
-                <p className="backButton"><a href="/signup" className="btn btn-success">BACK</a></p>
           </div>
         </div>
     );
