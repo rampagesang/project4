@@ -59,59 +59,52 @@ class Login extends Component {
 
   render() {
     return (
-        <div className="container" style={ styles }>
-          <div className="row" align="center">
-            <h1>LETS GET YOU SETTLED IN</h1>
-          </div>
-          <div className="container login" align="center">
+        <div className="container" >
+          <div className="login" style={ styles } align="center">
             <div className="row">
               <div className="col-md-3" />
               <div className="col-md-6">
                 <div className="col align-self-center box">
                   <form>
                     <div className="form-group">
-                    <Input inputProps={{
-                      value: this.state.email,
-                      onChange: this.handleInputChange,
-                      onFocus: this.handleFocus,
-                      name: "email",
-                      placeholder: "Email (required)",
-                      className: "form-control",
-                      required: "",
-                      autoFocus: true
-                    }}
-                      label="Email"
+                    <Input
+                      value={this.state.email}
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleFocus}
+                      name="email"
+                      placeholder="Email (required)"
+                      className="form-control"
+                      required=""
+                      autoFocus={true}
                     />
                     </div>
                     <div className="form-group">
                     <Input
-                      inputProps={{
-                      value: this.state.password,
-                      onChange: this.handleInputChange,
-                      name: "password",
-                      type: "password",
-                      placeholder: "Password (required)",
-                      className: "form-control",
-                      required: ""
-                    }}
-                    label="Password"
-                  />
-                  </div>
+                      value={this.state.password}
+                      onChange={this.handleInputChange}
+                      name="password"
+                      type="password"
+                      placeholder="Password (required)"
+                      className="form-control"
+                      required=""
+                    />
+                    </div>
                     <p className="lead">
                     <button
                       disabled={!(this.state.email && this.state.password && this.state.password.length >= 6)}
                       onClick={this.handleLogin}
-                      className="btn btn-lg btn-primary btn-block"
+                      className="btn btn-primary btn-block"
                     >
                       Login
                     </button>
                     </p>
+                    <p className="backButton"><a href="/signup" className="btn btn-success">BACK</a></p>
                   </form>
                 </div>
               </div>
               <div className="col-md-3" />
               </div>
-                <p className="backButton"><a href="/signup" className="btn btn-success">BACK</a></p>
+
           </div>
         </div>
     );

@@ -80,8 +80,8 @@ class Signup extends Component {
 
   render() {
     return (
-        <div className="container" style={ styles }>
-          <div className="container login" align="center">
+        <div className="container">
+          <div className="login" style={ styles } align="center">
             <div className="row">
               <div className="col-md-3" />
               <div className="col-md-6">
@@ -146,16 +146,18 @@ class Signup extends Component {
                     <button
                       disabled={!(this.state.firstName && this.state.lastName && this.state.email && this.state.password && this.state.password.length >= 6)}
                       onClick={this.handleFormSubmit}
-                      className="btn btn-lg btn-primary btn-block"
+                      className="btn btn-primary btn-block"
                     >
-                      Sign Up
+                      Register
                     </button>
+                    <div className="divider"/>
+                    <p className="backButton"><a href="/" className="btn btn-success">Back</a></p>
                   </form>
                 </div>
               </div>
               <div className="col-md-3" />
             </div>
-                <p className="backButton"><a href="/" className="btn btn-success">BACK</a></p>
+
           </div>
         </div>
     );

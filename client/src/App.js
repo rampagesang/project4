@@ -4,7 +4,6 @@ import Students from "./pages/Students";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Splash from "./pages/Splash";
 import Nominated from "./pages/Nominated";
 import History from "./pages/History";
 import Signup from "./pages/Signup";
