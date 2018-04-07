@@ -31,9 +31,9 @@ class History extends Component {
     console.log("REnder", this.state.students);
     return (
       <Container fluid>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style={{color: "black"}}>
           <div class="container text-center">
-            <h1 class="display-4">History of Nominated Students</h1>
+            <h1 class="display-4" style={{color: "black"}}>History of Nominated Students</h1>
             <p class="lead">Here are the students you have nominated this year!</p>
           </div>
         </div>

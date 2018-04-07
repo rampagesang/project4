@@ -61,16 +61,16 @@ class Nominated extends Component {
     return (
       Auth.isUserAuthenticated() ? (
       <Container fluid>
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid" style={{color: "black"}}>
           <div className="container text-center">
-            <h1 className="display-4">{thisMM}</h1>
+            <h1 className="display-4" style={{color: "black"}}>{thisMM}</h1>
             <div className="lead">Nominations from all teachers for this month</div>
             <p><em>Please make sure to delete any duplicates</em></p>
           </div>
         </div>
 
         {this.state.students.length ? (
-          <div className="card-div">
+          <div className="card-div" style={{color: "black"}}>
             {this.state.students
               .filter(student => new Date(Date.parse(student.date)).toLocaleString('en-US', { month: 'long' }) === thisMM )
               .map(student => (

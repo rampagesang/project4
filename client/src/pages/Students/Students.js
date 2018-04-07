@@ -51,9 +51,9 @@ class Students extends Component {
     return (
       Auth.isUserAuthenticated() ? (
       <Container fluid>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style={{color: "black"}}>
           <div class="container text-center">
-            <h1 class="display-4">Student of the Month</h1>
+            <h1 class="display-4" style={{color: "black"}}>Student of the Month</h1>
             <p class="lead">You are not required to submit for all grades!</p>
           </div>
         </div>
