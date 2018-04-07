@@ -92,50 +92,55 @@ class Signup extends Component {
                     </div>
                     <hr></hr>
                     <div className="form-group">
-                    <Input
-                      value={this.state.name}
-                      onChange={this.handleInputChange}
-                      onFocus={this.handleFocus}
-                      name="firstName"
-                      placeholder="First Name (required)"
-                      className="form-control"
-                      required=""
-                      autoFocus={true}
+                    <Input inputProps={{
+                      value:this.state.name,
+                      onChange:this.handleInputChange,
+                      onFocus:this.handleFocus,
+                      name:"firstName",
+                      placeholder:"First Name (required)",
+                      className:"form-control",
+                      required:"",
+                      autoFocus:true}}
+                      label="First Name"
                      />
                     </div>
                     <div className="form-group">
-                    <Input
-                      value={this.state.name}
-                      onChange={this.handleInputChange}
-                      onFocus={this.handleFocus}
-                      name="lastName"
-                      placeholder="LastName (required)"
-                      className="form-control"
-                      required=""
-                      autoFocus={true}
+                    <Input inputProps={{
+                      value:this.state.name,
+                      onChange:this.handleInputChange,
+                      onFocus:this.handleFocus,
+                      name:"lastName",
+                      placeholder:"LastName (required)",
+                      className:"form-control",
+                      required:"",
+                      autoFocus:true}}
+                      label="Last Name"
                      />
                     </div>
                     <div className="form-group">
-                    <Input
-                      value={this.state.email}
-                      onChange={this.handleInputChange}
-                      onFocus={this.handleFocus}
-                      name="email"
-                      placeholder="Email (required)"
-                      className="form-control"
-                      required=""
-                      autoFocus={true}
+                    <Input inputProps={{
+                      value:this.state.email,
+                      onChange:this.handleInputChange,
+                      onFocus:this.handleFocus,
+                      name:"email",
+                      placeholder:"Email (required)",
+                      className:"form-control",
+                      required:"",
+                      autoFocus:true}}
+                      label="Email"
                     />
                     </div>
                     <div className="form-group">
                     <Input
-                      value={this.state.password}
-                      onChange={this.handleInputChange}
-                      name="password"
-                      type="password"
-                      placeholder="Password (required)"
-                      className="form-control"
-                      required=""
+                      inputProps={{value:this.state.password,
+                      onChange:this.handleInputChange,
+                      name:"password",
+                      type:"password",
+                      placeholder:"Password (required)",
+                      className:"form-control",
+                      minlength:8,
+                      required:true}}
+                      label="Password"
                     />
                     </div>
                     <button
@@ -146,7 +151,6 @@ class Signup extends Component {
                       Sign Up
                     </button>
                   </form>
-                  
                 </div>
               </div>
               <div className="col-md-3" />
