@@ -60,6 +60,10 @@ body {
   width: 100vw;
 }
 
+.startButton {
+  padding-top: 135px;
+}
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;

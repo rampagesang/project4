@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Students from "./pages/Students";
 import Detail from "./pages/Detail";
+import Logout from "./components/Logout";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Nominated from "./pages/Nominated";
