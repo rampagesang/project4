@@ -31,13 +31,13 @@ class History extends Component {
     console.log("REnder", this.state.students);
     return (
       <Container fluid>
-        <div class="jumbotron jumbotron-fluid" style={{color: "black"}}>
-          <div class="container text-center">
-            <h1 class="display-4" style={{color: "black"}}>History of Nominated Students</h1>
-            <p class="lead">Here are the students you have nominated this year!</p>
+        <div className="jumbotron jumbotron-fluid" style={{color: "black"}}>
+          <div className="container text-center">
+            <h1 className="display-4" style={{color: "black"}}>History of Nominated Students</h1>
+            <p className="lead">Here are the students you have nominated this year!</p>
           </div>
         </div>
-      <div className="card-div">
+        <div className="card-div" style={{ color: "black" }}>
         
         {/* filter out only me to see my entire */}
         {this.state.students.filter(student => student.teacher.toLowerCase() === "ly").map(student => (

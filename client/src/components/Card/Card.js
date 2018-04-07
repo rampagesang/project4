@@ -4,8 +4,8 @@ import "./Card.css";
 
 const Card = props => (
 
-        <div className="card" style={{width: 250}}>
-            <h3 className="card-header text-center">
+    <div className="card" style={{ width: 250}}>
+        <h3 className="card-header text-center" style={{ backgroundColor: '#ffc61b'}}>
             {props.title}
             </h3>
             <p>6th Grade: {props.g6}</p>

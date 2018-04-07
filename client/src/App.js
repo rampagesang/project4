@@ -14,8 +14,10 @@ import Landing from "./pages/Landing";
 
 const App = () => (
   <Router>
-    <div>
-      <Nav />
+    <div style={{
+      backgroundImage: "url(http://unisci24.com/data_images/wlls/5/186813-background.jpg)"}}
+      >
+      <Nav style={{color: "red"}}/>
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/login" component={Login} />
