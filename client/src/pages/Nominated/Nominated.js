@@ -3,8 +3,6 @@ import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import {Container } from "../../components/Grid";
 import Card from "../../components/Card";
-import Auth from '../../utils/Auth';
-import { BrowserRouter as Route, Redirect, Link } from "react-router-dom";
 
 class Nominated extends Component {
   state = {
@@ -59,7 +57,6 @@ class Nominated extends Component {
   render() {
     let thisMM = new Date().toLocaleString('en-US', { month: 'long' });
     return (
-      Auth.isUserAuthenticated() ? (
       <Container fluid>
         <div className="jumbotron jumbotron-fluid" style={{color: "black"}}>
           <div className="container text-center">
@@ -91,12 +88,6 @@ class Nominated extends Component {
 }
 
       </Container>
-      ) : (
-        <Redirect
-            to='/'
-          />
-      )
-
     );
   }
 }

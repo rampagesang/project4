@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Auth from '../../utils/Auth';
+import { BrowserRouter as Route, Redirect, Link } from "react-router-dom";
 import API from "../../utils/API";
 import {Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import Monthly from "./award.json";
-import { BrowserRouter as Route, Redirect, Link } from "react-router-dom";
+
 
 
 //this will display the award depending on the month
@@ -34,7 +35,7 @@ class Students extends Component {
         teacher: this.state.teacher,
         characterCounts: this.state.characterCounts
       })
-        .then(res => this.loadStudents(), alert("Nomination complete!"))
+        .then(res => this.loadStudents(), alert("Nomination complete!"), window.location.href = "nominated")
         .catch(err => console.log(err));
     }
   };
@@ -109,7 +110,7 @@ class Students extends Component {
                   label="Teacher: "
                 />
                 <div className="btn-div">
-                  <FormBtn
+               <FormBtn
                     disabled={!(this.state.teacher || this.state.g6Student)}
                     onClick={this.handleFormSubmit}
                   >

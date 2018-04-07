@@ -35,7 +35,7 @@ overflow: hidden;
   color: white;
   background-color: #ffc61b;
   padding: 50px;    
-  border-radius: 5px;
+  border-radius: 10%;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.329); /*THIS does not work as expected*/
 }
 

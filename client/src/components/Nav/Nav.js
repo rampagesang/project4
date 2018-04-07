@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,7 +44,7 @@ const Nav = () => (
     <form className="form-inline my-2 my-lg-0">
       <a
         className="btn btn-outline-warning my-2 my-sm-0"
-        href="/"
+        href="/logout"
       >
         Logout
       </a>

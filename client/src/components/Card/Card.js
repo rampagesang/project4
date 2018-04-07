@@ -1,5 +1,5 @@
 import React from "react";
-import DeleteBtn from "../../components/DeleteBtn";
+//import DeleteBtn from "../../components/DeleteBtn";
 import "./Card.css";
 
 const Card = props => (
