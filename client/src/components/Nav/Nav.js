@@ -43,7 +43,7 @@ const Nav = () => (
     <form className="form-inline my-2 my-lg-0">
       <a
         className="btn btn-outline-warning my-2 my-sm-0"
-        href="/logout"
+        href="/"
       >
         Logout
       </a>
