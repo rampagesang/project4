@@ -23,7 +23,6 @@ const App = () => (
         <Route exact path="/nominate" component={Students} />
         <Route exact path="/history" component={History} />
         <Route exact path="/students/:id" component={Detail} />
-      
         <Route component={NoMatch} />
       </Switch>
     </div>

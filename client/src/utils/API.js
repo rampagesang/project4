@@ -18,11 +18,11 @@ export default {
     return axios.post("/api/students", studentData);
   },
   // Authenticates a user
-  authenticateUser: function (userData) {
+  authenticateUser: function(userData) {
     return axios.post("/auth/login", userData);
   },
   // Sign up a user
-  signUp: function (userData) {
+  signUp: function(userData) {
     return axios.post("/auth/signup", userData);
   }
 

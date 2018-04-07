@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TeacAid",
+  "name": "Providing Teachers to vote their students efficiently",
   "icons": [
     {
       "src": "favicon.ico",

@@ -60,7 +60,7 @@ class Login extends Component {
   render() {
     return (
         <div className="container" style={ styles }>
-          <div className="row " align="center">
+          <div className="row" align="center">
             <h1>LETS GET YOU SETTLED IN</h1>
           </div>
           <div className="container login" align="center">
