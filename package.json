@@ -36,6 +36,6 @@
     "react-scripts": "^1.1.1",
     "react.dom": "^1.0.1",
     "validator": "^9.4.1",
-    "video.js": "^6.7.3"
+    "video.js": "^6.8.0"
   }
 }
