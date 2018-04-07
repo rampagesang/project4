@@ -70,31 +70,26 @@ class Login extends Component {
                 <div className="col align-self-center box">
                   <form>
                     <div className="form-group">
-                    <Input inputProps={{
-                      value: this.state.email,
-                      onChange: this.handleInputChange,
-                      onFocus: this.handleFocus,
-                      name: "email",
-                      placeholder: "Email (required)",
-                      className: "form-control",
-                      required: "",
-                      autoFocus: true
-                    }}
-                      label="Email"
+                    <Input
+                      value={this.state.email}
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleFocus}
+                      name="email"
+                      placeholder="Email (required)"
+                      className="form-control"
+                      required=""
+                      autoFocus={true}
                     />
                     </div>
                     <div className="form-group">
                     <Input
-                      inputProps={{
-                        value: this.state.password,
-                        onChange: this.handleInputChange,
-                        name: "password",
-                        type: "password",
-                        placeholder: "Password (required)",
-                        className: "form-control",
-                        required: ""
-                      }}
-                      label="Password"
+                      value={this.state.password}
+                      onChange={this.handleInputChange}
+                      name="password"
+                      type="password"
+                      placeholder="Password (required)"
+                      className="form-control"
+                      required=""
                     />
                     </div>
                     <p className="lead">

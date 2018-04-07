@@ -1,8 +1,7 @@
 const express = require('express');
 const validator = require('validator');
 const passport = require('passport');
-require('../../passport/local-signup')(passport);
-require('../../passport/local-login')(passport);
+
 const router = require("express").Router();
 
 /**

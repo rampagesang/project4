@@ -72,7 +72,7 @@ class Signup extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.firstName && this.state.lastName && this.state.email && this.state.password) {
-      this.signUp(this.state);
+      this.signUp();
     } else {
       this.setState({ errorMessage: "Please enter all required fields to sign up."})
     }
@@ -92,54 +92,50 @@ class Signup extends Component {
                     </div>
                     <hr></hr>
                     <div className="form-group">
-                    <Input inputProps={{
-                      value:this.state.name,
-                      onChange:this.handleInputChange,
-                      onFocus:this.handleFocus,
-                      name:"firstName",
-                      placeholder:"First Name (required)",
-                      className:"form-control",
-                      required:"",
-                      autoFocus:true}}
-                      label="First Name"
+                    <Input
+                      value={this.state.name}
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleFocus}
+                      name="firstName"
+                      placeholder="First Name (required)"
+                      className="form-control"
+                      required=""
+                      autoFocus={true}
                      />
                     </div>
                     <div className="form-group">
-                    <Input inputProps={{
-                      value:this.state.name,
-                      onChange:this.handleInputChange,
-                      onFocus:this.handleFocus,
-                      name:"lastName",
-                      placeholder:"LastName (required)",
-                      className:"form-control",
-                      required:"",
-                      autoFocus:true}}
-                      label="Last Name"
+                    <Input
+                      value={this.state.name}
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleFocus}
+                      name="lastName"
+                      placeholder="LastName (required)"
+                      className="form-control"
+                      required=""
+                      autoFocus={true}
                      />
                     </div>
                     <div className="form-group">
-                    <Input inputProps={{
-                      value:this.state.email,
-                      onChange:this.handleInputChange,
-                      onFocus:this.handleFocus,
-                      name:"email",
-                      placeholder:"Email (required)",
-                      className:"form-control",
-                      required:"",
-                      autoFocus:true}}
-                      label="Email"
+                    <Input
+                      value={this.state.email}
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleFocus}
+                      name="email"
+                      placeholder="Email (required)"
+                      className="form-control"
+                      required=""
+                      autoFocus={true}
                     />
                     </div>
                     <div className="form-group">
                     <Input
-                      inputProps={{value:this.state.password,
-                      onChange:this.handleInputChange,
-                      name:"password",
-                      type:"password",
-                      placeholder:"Password (required)",
-                      className:"form-control",
-                      required:""}}
-                      label="Password"
+                      value={this.state.password}
+                      onChange={this.handleInputChange}
+                      name="password"
+                      type="password"
+                      placeholder="Password (required)"
+                      className="form-control"
+                      required=""
                     />
                     </div>
                     <button

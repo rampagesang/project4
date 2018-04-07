@@ -25,5 +25,4 @@ export default {
   signUp: function(userData) {
     return axios.post("/auth/signup", userData);
   }
-
 };
