@@ -16,5 +16,14 @@ export default {
   // Saves a student to the database
   saveStudent: function(studentData) {
     return axios.post("/api/students", studentData);
+  },
+  // Authenticates a user
+  authenticateUser: function (userData) {
+    return axios.post("/auth/login", userData);
+  },
+  // Sign up a user
+  signUp: function (userData) {
+    return axios.post("/auth/signup", userData);
   }
+
 };
